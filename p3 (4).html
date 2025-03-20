@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ma'am Broa <3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://img.freepik.com/free-vector/background-style-with-hand-drawn-elements_23-2148590942.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 7vh 5vw;
+        }
+        p {
+            font-size: 3vw;
+            color: #6f482b;
+            margin-bottom: 10vh;
+        }
+        .content {
+            width: 30%;
+            max-width: 600px;
+			margin-left: 30vw;
+        }
+        .container {
+            width: 100%;
+            margin-bottom: 3vh;
+        }
+        .box {
+            width: 100%;
+            padding: 1.8vh;
+            background: #F8E472;
+            text-align: center;
+            border: 2px solid #FCA510;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #000;
+            font-size: 1.1vw;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .box:hover {
+            background: #FCA510;
+            color: white;
+            transform: scale(1.05);
+        }
+        .dropdown {
+			width: 100%;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            background: #ffe4e1;
+            padding: 1.5vh;
+            border-radius: 10px;
+            font-size: 1vw;
+            text-align: left;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .box:focus + .dropdown, .box:active + .dropdown {
+            max-height: 500px;
+            opacity: 1;
+			overflow: hidden
+        }
+        .button-container {
+            margin-top: 17vh;
+        }
+        .button {
+            width: 50vw;
+            max-width: 300px;
+            padding: 1.5vh;
+            font-size: 1.1vw;
+			font-weight: 600;
+            background: #F8E472;
+            border: 2px solid #FCA510;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            background: #FCA510;
+            color: white;
+            transform: scale(1.05);
+        }
+        img.fixed-img {
+            position: absolute;
+			max-width: 100%;
+            height: auto;
+			object-fit: contain;
+        }
+        .img1 {
+            top: 20vh;
+            left: 15vw;
+			width: 60vh;
+        }
+        .img2 {
+            top: 25vh;
+            right: 3vw;
+			width: 15vw;
+        }
+        @media (max-width: 768px) {
+            p {
+                font-size: 5vw;
+            }
+            .box, .dropdown {
+                font-size: 3vw;
+            }
+            .button {
+                font-size: 3vw;
+            }
+            .img1
+                width: 45vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>What we love about you <3</p>
+    <img class="fixed-img img1" src="file:///C:/Users/jlcap/Downloads/collage.png">
+    <img class="fixed-img img2" src="https://media.tenor.com/E3dcwj0eCzgAAAAj/sweet-house-chipmunks.gif">
+    <div class="content">
+        <div class="container">
+            <div class="box" tabindex="0">Reason 1</div>
+            <div class="dropdown">On this special day, we just want to take a moment to celebrate you. However, not only as a teacher but a inspiration, a guiding light to all, and someone who has made a unforgettable impact on our lives.</div>
+        </div>
+        <div class="container">
+            <div class="box" tabindex="0">Reason 2</div>
+            <div class="dropdown">From the very first day, you have made learning much easier. We were still at 7th grade, anxious and overwhelmed to the new environment. However, because of your energy, kindness, and unwavering belief in your students, we managed to survive and enjoy the school year more.</div>
+        </div>
+        <div class="container">
+            <div class="box" tabindex="0">Reason 3</div>
+            <div class="dropdown">You always gave a sense of ease, where you we feel comfortable around you. Someone who is both humourous and beautiful. You don’t just teach lessons from a book; you teach us about life, about resilience, about the power of curiosity and kindness.<br><br>Cheers to another year, and may all of your wishes come true.</div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="button" onclick="location.href='p4.html'">Next Page</button>
+    </div>
+</body>
+</html>
