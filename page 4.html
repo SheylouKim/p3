@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Video</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://images2.alphacoders.com/505/505281.jpg') no-repeat center center/cover;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .video-container {
+            margin: 20px 0;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        .button-container {
+            position: absolute;
+            bottom: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .button-container img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .button-container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+            animation: bounce 0.6s ease-in-out infinite;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Special Video for You &lt;3</h1>
+    <h2>Embedded Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9MK8l7ZtDao" frameborder="0" allowfullscreen></iframe>
+    </div>
+        
+    </div>
+    <div class="button-container">
+        <a href="https://SheylouKim.github.io/p3/last-page.html">
+            <img src="https://www.pngplay.com/wp-content/uploads/10/Keanu-Reeves-Transparent-Background.png" alt="Go to Website">
+        </a>
+    </div>
+</body>
+</html>
+
